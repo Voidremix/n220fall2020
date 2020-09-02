@@ -9,3 +9,8 @@ function draw(){
     fill(120, 0, 120, 20);
 
 }
+
+function draw(){
+    fill(255);
+    arc(350, 500, 400, 400, PI, TWO_PI,);
+}
