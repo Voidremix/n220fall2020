@@ -10,10 +10,13 @@ function setup(){
 
 
     fill(210);
-    triangle(350, 400, 500, 400, 425, tiptop);
+    triangle(150, 500, 550, 500, 350, tiptop);
 
 
     fill(210,105,30);
     arc(350, 500, big, big, PI, TWO_PI,);
 
+    strokeWeight(20);
+    line(0, 600, 600, 800);
+    
 }
