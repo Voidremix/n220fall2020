@@ -4,9 +4,9 @@ function setup(){
 }
 
 function draw(){
+    fill(120, 0, 120, 20);
     ellipse (60,80,100,100);
     noStroke();
-    fill(120, 0, 120, 20);
 
 }
 
