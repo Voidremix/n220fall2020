@@ -1,17 +1,28 @@
 
 let xPos = 0;
-let yPos = 100;
-let xSpeed = 2;
-let ySpeed = 2;
+let yPos = 75;
+let xSpeed = 5;
+let ySpeed = 3;
 
+
+function setup() {
+
+    createCanvas(600,600);
+}
 
 function draw() {
-
-    createCanvas(600,800);
-    background(0,50,205);
-    noStroke();
-
+    background (15, 37, 195);
     xPos = xPos + xSpeed;
-	yPox = yPos + ySpeed;
-	circle(xPos, yPos, 30)
+    
+    fill(255);
+
+    if( xPos > 300) {
+        fill (0);
+    }
+
+    if ( xPos > 600) {
+        xPos = 0;
+    }
+
+    circle(xPos, yPos, 30); 
 }
