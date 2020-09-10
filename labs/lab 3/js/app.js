@@ -8,7 +8,7 @@ function setup(){
 }
 
 function draw(){
-    background (255);
+    background (40,160,40);
       
     for (let i = 1; i < width; i++) {
         xvals[i - 1] = xvals[i];
@@ -18,14 +18,11 @@ function draw(){
     xvals[width - 1] = mouseX;
     yvals[width - 1] = mouseY;
       
-    fill(255);
+    fill(0,0,255);
     noStroke();
-    circle()
-      
-    for (let i = 1; i < width; i++) {
-        stroke(255);
-        point(i, xvals[i] / 3);
-        stroke(0);
-        point(i, height / 3 + yvals[i] / 3);
+
+    if (mouseX > 200){
+        fill(255,0,0);
     }
+    circle(mouseX, mouseY,30);
 }
