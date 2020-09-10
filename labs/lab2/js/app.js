@@ -4,10 +4,13 @@ let yPos = 75;
 let xSpeed = 5;
 let ySpeed = 3;
 
+function draw(){
+    console.log;
+}
 
 function setup() {
 
-    createCanvas(600,600);
+    createCanvas(800,600);
 }
 
 function draw() {
@@ -20,7 +23,7 @@ function draw() {
         fill (0);
     }
 
-    if ( xPos > 600) {
+    if ( xPos > 800) {
         xPos = 0;
     }
 
