@@ -8,7 +8,7 @@ function draw(){
 
     noFill();
 
-    for(var i = 0; i < 4; i++) {
+    for(var i = 0; i < 25; i++) {
 
         circle(100, 100, i *30);
     }
