@@ -9,7 +9,6 @@ function draw(){
     for(var i = 0; i>4; i++) {
 
         fill (255,0,0);
-        rect(100, 100, 50, 50,);
-        console.log();
+        circle(100,100, i *30);
     }
 }
