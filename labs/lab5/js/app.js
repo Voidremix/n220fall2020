@@ -4,7 +4,7 @@ function setup() {
 }
 
 function draw(){
-    background(255);
+    background(110);
 
     for(var i = 0; i>4; i++) {
 
