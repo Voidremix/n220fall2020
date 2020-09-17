@@ -10,5 +10,6 @@ function draw(){
 
         fill (255,0,0);
         rect(0, 0, 10, 10,);
+        console.log();
     }
 }
