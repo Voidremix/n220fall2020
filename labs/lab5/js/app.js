@@ -4,11 +4,12 @@ function setup(){
 }
 
 function draw(){
-    background(110);
+    background(100);
 
-    for(var i = 0; i<4; i++) {
+    noFill();
 
-        fill (255,0,0);
-        circle(100,100, i *30);
+    for(var i = 0; i  <4; i++) {
+
+        circle(100, 100, i *30);
     }
 }
