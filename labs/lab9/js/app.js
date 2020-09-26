@@ -1,22 +1,18 @@
-let dObj = { x:200, y:0, velocityY:2 }
-let gravity = .2;
+let positions = [0,0,0,0];
 
-function setup () {
-    createCanvas(600,600);
-    
-function draw() {
-    background(0);
-    fill(0,0,200);
+function setup() {
+    createCanvas(400,400);
 
-    circle(50 + dObj.x, dObj.y, 100);
-    dObj.y += dObj.velocityY;
-    dObj.velocityY += gravity;
 }
 
-    var timer = 166;
+function draw() {
 
-    window.setInterval(function() {
-        fallingDrops();
-    }, timer);
+    background(210);
 
+    positions.push( mouseX );
+    positions.shift();
+
+    for (var i=0; i < positions.length; i++) {
+        circle(positions[i], 150, 20);
+    }
 }
