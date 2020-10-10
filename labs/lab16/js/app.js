@@ -8,13 +8,12 @@ var myCircles = [
 
 function setup() {
     createCanvas(400, 400);
-
+    fill(120);
 }
 
 function draw() {
     for(var i = 0; i < myCircles.length; i++) {
-        circle(myCircles.x, myCircles.y, myCircles.r);
-        myCircles.r ++;
-        
+        circle(myCircles[i].x, myCircles[i].y, myCircles[i].r);
+        myCircles[i].r +=1;
     }
 }
