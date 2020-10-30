@@ -1,8 +1,8 @@
-let username = document.getElementById("username"); 
+let username = document.querySelector("#username"); 
 
 function greet() {
 
-    console.log ("Hello, " + username);
+    console.log ("Hello, " + username.value);
 
 }
 
