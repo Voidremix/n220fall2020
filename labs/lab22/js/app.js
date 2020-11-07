@@ -1,11 +1,16 @@
+var divArray = new Array(100);
 
-function divs(){
+var colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink'];
 
-    for(i = 0; i < newDiv.length; i++){
+for (var i = 0; i < divArray.length; i++) {
 
-        document.createElement("div");
+   divArray[i] = document.createElement('div');
 
-    }
+   divArray[i].className = "divs";
 
-    document.appendChild(newDiv, null)
+   divArray[i].style.background = colors[parseInt(Math.random() * colors.length)];
+    
+   document.body.appendChild(divArray[i]);
+
+   console.log(print);
 }

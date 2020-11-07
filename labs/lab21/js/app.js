@@ -1,16 +1,16 @@
 
-document.getElementById("div").addEventListener("mouseover", mouseOver);
+document.addEventListener("mouseover", mouseOver);
 
-document.getElementById("div").addEventListener("mouseout", mouseOut);
+document.addEventListener("mouseout", mouseOut);
 
 function mouseOver() {
 
-  document.getElementById("div").style.color = "#0c0c0d";
+  document.getElementById("myDiv").style.color = "#0c0c0d";
 
 }
 
 function mouseOut() {
 
-  document.getElementById("div").style.color = "#326fa8";
+  document.getElementById("myDiv").style.color = "#326fa8";
 
 }
