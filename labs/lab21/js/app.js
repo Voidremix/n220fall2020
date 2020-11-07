@@ -1,8 +1,4 @@
 
-document.addEventListener("mouseover", mouseOver);
-
-document.addEventListener("mouseout", mouseOut);
-
 function mouseOver() {
 
   document.getElementById("myDiv").style.color = "#0c0c0d";
