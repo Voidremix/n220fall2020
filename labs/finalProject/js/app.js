@@ -29,7 +29,7 @@ document.body.appendChild(canv);
 var ctx = canv.getContext("2d");
 
 // game variables
-var ball, bricks = [], level, paddle, touchX;
+var ball, bricks = [], level, paddle;
 
 // dimensions
 var height, width, wall;
@@ -41,7 +41,7 @@ document.addEventListener("keyup", keyUp);
 window.addEventListener("resize", setDimensions);
 
 // set up the game loop
-var timeDelta, timeLast;
+var timeDiff, timeLast;
 requestAnimationFrame(loop);
 
 function loop(timeNow) {
@@ -50,12 +50,12 @@ function loop(timeNow) {
     }
 
     // calculate the time difference
-    timeDelta = (timeNow - timeLast) * 0.001; // seconds
+    timeDiff = (timeNow - timeLast) * 0.001; // seconds
     timeLast = timeNow;
 
     // update
-    updatePaddle(timeDelta);
-    updateBall(timeDelta);
+    updatePaddle(timeDiff);
+    updateBall(timeDiff);
     updateBricks();
 
     // draw
